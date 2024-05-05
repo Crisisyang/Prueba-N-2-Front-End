@@ -537,6 +537,7 @@
   }
   p {
     font-size: 20px;
+    color: white;
   }
   h2 {
     font-size: xx-large;
@@ -579,6 +580,8 @@
     padding: 8px 12px;
     margin: 8px 0 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 100px;
     border: 2px solid #ff912bd6;
     background: 0;
     color: rgb(255, 255, 255);
@@ -592,4 +595,6 @@
   }
   span {
     margin: 0 5px 0 15px;
+    margin-top: 1rem;
+    font-size:20px;
   }

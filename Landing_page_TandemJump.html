@@ -53,11 +53,13 @@
         </div>
         <div class="nav_btn_form">
           <form class="form">
-            <h2>¿Estás Listo? <br>¡Demos el salto!</h2>
-            <p type="Tu Nombre"><input placeholder="Escribe tu nombre aquí.."></input></p>
-            <p type="Queremos contactarte. Déjanos tu Email:"><input placeholder="Escribe aquí tu correo.."></input></p>
-            <p type="Ingresa tu salto favorito y lo anotaremos para tu sesión:"><input placeholder="Piénsalo bien"></input></p>
-            <button>INSCRÍBETE</button>
+          <h2>¿Estás Listo?<br>¡Vamos!</h2>
+          <p>Nombre:</p>
+          <input type="text" placeholder="Ingresa tu nombre" required>
+          <p>Email:</p>
+          <input type="email" placeholder="Ingresa tu correo electrónico" required>
+          <button onclick="submitForm()">¡Inscríbete!</button>
+          <span id="successMessage" style="display:none; color:#ff912bd6;">¡Genial! Te enviaremos la información a tu correo.</span>
           </form>
         </div>
       </div>
@@ -152,12 +154,15 @@
           </ul>
         </div>
       </div>
-      <div class="footer__bar">
-        Copyright © 2024 Diego Del Rio (TMJ) Todos los derechos reservados.
-      </div>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
+    <script>
+      function submitForm() {
+        event.preventDefault(0);
+        var successMessage = document.getElementById("successMessage");
+        successMessage.style.display ="block" ;
+      }
+    </script>
   </body>
 </html>
