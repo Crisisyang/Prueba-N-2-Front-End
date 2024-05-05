@@ -188,6 +188,9 @@
   }
 
   nav {
+    position: sticky;
+    top:0;
+    left:0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
